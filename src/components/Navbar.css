@@ -1,0 +1,125 @@
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 24px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.navbar.scrolled {
+  background: rgba(13, 13, 26, 0.95);
+  border-bottom: 1px solid #2a2a4a;
+  backdrop-filter: blur(20px);
+  padding: 14px 48px;
+}
+
+.nav-logo {
+  font-family: 'Syne', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #f0f0ff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  letter-spacing: -0.5px;
+}
+.nav-logo span { color: #6c63ff; }
+
+.nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+.nav-btn {
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  color: #8888aa;
+  background: none;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  transition: color 0.2s;
+  padding: 0;
+}
+.nav-btn:hover,
+.nav-btn.active { color: #6c63ff; }
+
+.nav-cta {
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  color: #ffffff;
+  background: #6c63ff;
+  padding: 10px 24px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  transition: all 0.2s;
+}
+.nav-cta:hover { background: #5a52e0; transform: translateY(-1px); }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: #f0f0ff;
+  transition: all 0.3s;
+}
+.hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  background: #0d0d1a;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.mobile-link {
+  font-family: 'Syne', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #f0f0ff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  letter-spacing: -0.5px;
+  transition: color 0.2s;
+}
+.mobile-link:hover { color: #6c63ff; }
+.mobile-cta {
+  font-family: 'DM Mono', monospace;
+  font-size: 14px;
+  color: #ffffff;
+  background: #6c63ff;
+  padding: 14px 36px;
+  border-radius: 2px;
+  text-decoration: none;
+  margin-top: 16px;
+}
+
+@media (max-width: 900px) {
+  .navbar { padding: 20px 24px; }
+  .navbar.scrolled { padding: 14px 24px; }
+  .nav-links { display: none; }
+  .nav-cta { display: none; }
+  .hamburger { display: flex; }
+}

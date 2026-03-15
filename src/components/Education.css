@@ -1,0 +1,73 @@
+.education {
+  padding: 120px 48px;
+  background: #12122a;
+  border-top: 1px solid #2a2a4a;
+  border-bottom: 1px solid #2a2a4a;
+}
+
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+}
+
+.edu-card {
+  background: #0d0d1a;
+  border: 1px solid #2a2a4a;
+  padding: 48px;
+  transition: border-color 0.3s;
+}
+.edu-card:hover { border-color: #6c63ff; }
+
+.edu-degree {
+  font-family: 'Syne', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #f0f0ff;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+.edu-field {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: #6c63ff;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.edu-college {
+  font-size: 15px;
+  color: #8888aa;
+  margin-bottom: 4px;
+}
+.edu-uni {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: #44445a;
+  letter-spacing: 0.03em;
+}
+.edu-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #1a1a2e;
+}
+.edu-year {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: #44445a;
+  letter-spacing: 0.1em;
+}
+.edu-cgpa {
+  font-family: 'Syne', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #6c63ff;
+}
+
+@media (max-width: 900px) {
+  .education { padding: 80px 24px; }
+  .edu-grid  { grid-template-columns: 1fr; }
+}

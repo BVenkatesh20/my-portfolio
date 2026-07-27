@@ -59,58 +59,6 @@ export default function Contact() {
             ))}
           </div>
         </div>
-
-        {/* Right — Form */}
-        <div className="contact-right">
-          <div className="form-row">
-            <div className="form-group">
-              <label>Your Name</label>
-              <input
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                placeholder="Full Name"
-              />
-            </div>
-            <div className="form-group">
-              <label>Your Email</label>
-              <input
-                type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                placeholder="Email Address"
-              />
-            </div>
-          </div>
-          <div className="form-group">
-            <label>Subject</label>
-            <input
-              type="text"
-              name="subject"
-              value={form.subject}
-              onChange={handleChange}
-              placeholder="Job Opportunity / Project"
-            />
-          </div>
-          <div className="form-group">
-            <label>Message</label>
-            <textarea
-              name="message"
-              rows={6}
-              value={form.message}
-              onChange={handleChange}
-              placeholder="Tell me about the opportunity or project..."
-            />
-          </div>
-          <button
-            className={`btn-submit ${sent ? "sent" : ""}`}
-            onClick={handleSubmit}
-          >
-            {sent ? "Message Sent! ✓" : "Send Message →"}
-          </button>
-        </div>
       </div>
     </section>
   );

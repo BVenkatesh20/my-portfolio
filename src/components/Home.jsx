@@ -23,10 +23,9 @@ export default function Home() {
         <div className="hero-role">Full Stack Developer</div>
 
         <p className="hero-desc">
-          Specializing in building scalable web applications with{" "}
-          <strong>Node.js</strong>, <strong>React.js</strong> and{" "}
-          <strong>MongoDB</strong>. Turning complex problems into
-          clean, elegant solutions.
+          Full Stack Developer specializing in modern web application
+          development with <strong>React.js</strong>, <strong>Node.js</strong>,
+          <strong>Express.js</strong>, and <strong>MongoDB</strong>.
         </p>
 
         <div className="hero-actions">

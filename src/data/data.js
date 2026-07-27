@@ -11,7 +11,7 @@ export const profile = {
 };
 
 export const stats = [
-  { number: "1+", label: "Years Experience" },
+  { number: "1.5+", label: "Years Experience" },
   { number: "3",  label: "Projects Built"   },
 ];
 
@@ -19,7 +19,7 @@ export const skills = [
   {
     icon: "⚛️",
     title: "Frontend",
-    tags: ["React.js","Next.js","JavaScript","HTML5","CSS3","Tailwind CSS","Material UI","Responsive Design"],
+    tags: ["HTML5","CSS3","JavaScript","React.js","Next.js","Tailwind CSS","Material UI"],
   },
   {
     icon: "⚙️",
@@ -42,72 +42,99 @@ export const experience = [
   {
     company: "Sentinix Tech Solutions",
     role: "Full Stack Developer",
-    period: "March 2025 ",
+    period: "March 2025 - July 2026",
     location: "Tirunelveli, Tamil Nadu",
     points: [
-      "Built and maintained a full stack POS system with billing, order management, tax calculation, stock tracking and daily closing reports using React.js, Node.js and MongoDB",
-      "Developed secure REST APIs with JWT authentication and role-based access control for ADMIN and OPERATOR roles",
-      "Built sales report APIs with date filters, order-type grouping (LINE, PARCEL, AC, HD, SWIGGY) and unit-wise quantity tracking (KG, G, PCS)",
-      "Implemented payment integration supporting CASH, CARD and UPI with balance calculation and refund processing",
-      "Developed stock management system with daily tracking, sold quantity calculation and low stock alerts",
-      "Contributed to Temple Management System with Archanai, Prasadam bookings and admin dashboard",
-      "Built responsive UI components using Material UI and Tailwind CSS for cross-device compatibility",
+      "Developed and maintained enterprise web applications including NIX POS, NIX Temple Tech and Kanora using React.js, Node.js, Express.js and MongoDB.",
+      "Built frontend and backend modules by integrating REST APIs and implementing business requirements.",
+      "Developed features for restaurant billing, temple booking management, quotation and invoice generation, inventory tracking, reports and GST calculation.",
+      "Implemented JWT authentication, role-based access control and secure API integration.",
+      "Collaborated with cross-functional teams to deliver scalable, responsive and user-friendly web applications while optimizing application performance."
     ],
-    tags: ["React.js","Node.js","MongoDB","Express.js","JWT","Material UI","Tailwind CSS"],
+    tags: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Material UI",
+      "Tailwind CSS"
+    ],
   },
 ];
 
 export const projects = [
   {
     id: "01",
-    title: "POS System",
+    title: "Nix POS – Restaurant Billing System",
     type: "Full Stack",
     featured: true,
-    desc: "A complete Point of Sale system for restaurant management. Handles everything from order creation to payment processing and sales analytics.",
+    desc: "A complete restaurant Point of Sale (POS) system for billing, order management, inventory tracking and sales reporting.",
     features: [
-      "Developed responsive frontend interfaces for billing, menu management, and order processing.",
-      "Implemented real-time order updates and stock tracking through API integration.",
-      "Designed reusable UI components using Material UI for improved performance and maintainability.",
-      "Sales reports with date filters and order-type grouping",
-      "Stock management with daily tracking and alerts",
-      "Integrated tax calculation and daily closing report features",
-       "Collaborated with backend developers to ensure seamless API communication and data accuracy."
+      "Built a complete restaurant POS frontend with category-wise product listing, multi-location support and order management.",
+      "Developed a billing interface with cart management, table and waiter selection, tax calculation and end-to-end order processing.",
+      "Integrated REST APIs for real-time order updates, inventory tracking and sales data.",
+      "Built admin modules for Categories, Products, Add-ons, Suppliers, Discounts and User Management.",
+      "Implemented Sales Report, Stock Report, CashBook Report and Shift Closing modules with advanced date filtering."
     ],
-    tech: ["React.js","Node.js","MongoDB","Express.js","Tailwind CSS","Material UI"],
+    tech: [
+      "React.js",
+      "Material UI",
+      "Node.js",
+      "Express.js",
+      "MongoDB"
+    ],
     github: "https://github.com/venkatesh20502",
     live: "",
   },
+
   {
     id: "02",
-    title: "Papanasanathar Temple Website",
-    type: "Backend",
+    title: "NIX Temple Tech – Temple Management Platform",
+    type: "Full Stack",
     featured: false,
-    desc: "Full stack temple management platform managing events, donations, bookings and admin operations with secure APIs.",
+    desc: "A complete temple management platform for handling bookings, donations, reports and daily temple operations.",
     features: [
-      "Developed backend architecture for the official temple website to manage events, images, donations, and homepage content.",
-      "Designed and implemented secure RESTful APIs with proper routing and controller structure",
-      "Built dynamic CRUD operations for managing events, news, and announcements",
-      "Implemented authentication and role-based access for admin operations.",
-      "Optimized database queries and structured MongoDB collections for efficient data handling.",
+      "Built a complete temple management frontend with an Admin Dashboard displaying real-time booking statistics for Archanai, Donation, Prasadam, Ubayam, Hall and Annadhanam modules.",
+      "Developed a cart-based Counter Dashboard with grouped categories, quantity management and multiple payment methods including Banking, PhonePe, UPI, Card and Cash.",
+      "Integrated REST APIs with Node.js and MongoDB for booking management, reporting and real-time data updates.",
+      "Implemented JWT authentication with role-based access control for Admin and Counter users.",
+      "Built Daily Closing, Expenses Tracking, Reports and Site Settings modules."
     ],
-    tech: ["Node.js","Express.js","MongoDB","JWT","React.js"],
+    tech: [
+      "React.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT"
+    ],
     github: "https://github.com/venkatesh20502",
     live: "",
   },
+
   {
     id: "03",
-    title: "Mandir Management System",
+    title: "Kanora – Billing & Quotation Management System",
     type: "Full Stack",
-    featured: false,
-    desc: "Complete admin dashboard for managing temple operations including Archanai, Prasadam, Donations, Hall and Annadhanam bookings.",
+    featured: true,
+    desc: "A GST-enabled billing and quotation management system with quotation-to-invoice conversion, inventory validation and multi-location support.",
     features: [
-     "Built a complete admin dashboard for managing Archanai, Donations, Prasadam, Ubayam, Hall, and Annadhanam bookings.",
-     "Developed dynamic booking management interfaces with real-time data updates0.",
-     "Created fully responsive UI layouts using Tailwind CSS for cross-device compatibility.",
-     "Integrated authentication and protected routes for secure admin access.",
-     "Improved operational workflow by implementing user-friendly counter and admin modules.",
+      "Built a quotation and invoice management system with auto-generated QUO/INV numbers, item-level GST calculation and support for Inclusive and Exclusive tax modes with real-time CGST/SGST breakdown.",
+      "Developed one-click Quotation-to-Invoice conversion with automatic GST data carry-over, editable Tax Type and real-time total recalculation.",
+      "Implemented a dynamic GST billing toggle to switch between GST and non-GST invoices with instant recalculation of taxes and net totals.",
+      "Built real-time stock validation during invoice creation to prevent overselling by checking available inventory against existing invoices and daily stock entries.",
+      "Implemented multi-location support with location-wise client and product filtering, automatically clearing invoice items when switching locations.",
+      "Secured REST APIs using JWT authentication with company-wise data isolation for a multi-tenant architecture."
     ],
-    tech: ["React.js","Node.js","MongoDB","Tailwind CSS","JWT"],
+    tech: [
+      "React.js",
+      "Material UI",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT"
+    ],
     github: "https://github.com/venkatesh20502",
     live: "",
   },

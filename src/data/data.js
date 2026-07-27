@@ -19,7 +19,7 @@ export const skills = [
   {
     icon: "⚛️",
     title: "Frontend",
-    tags: ["HTML5","CSS3","JavaScript","React.js","Next.js","Tailwind CSS","Material UI"],
+    tags: ["HTML","CSS","JavaScript","React.js","Next.js","Tailwind CSS","Material UI"],
   },
   {
     icon: "⚙️",
